@@ -1,0 +1,3 @@
+token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNywiZXhwIjoxNjQ5NjExMzAxfQ.T_H_jPEL5WggkXEcXRyQ4xbHEpynhS5zC-AXyysKCTY"
+
+print(len(token))
