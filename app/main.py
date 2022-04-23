@@ -30,11 +30,5 @@ app.include_router(vote.router)
 
 # path operation
 @app.get("/")
-async def root():
+def root():
     return {"message": "welcome to my api!!!"}
-
-
-@app.get("/sqlalchemy", response_model=schemas.PostResponse)
-def test_posts(db: Session = Depends(get_db)):
-    posts = db.query(models.Post).all()
-    return posts

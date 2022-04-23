@@ -26,20 +26,20 @@ def get_db():
 
 # Setup a connection to our database
 # Great ooportunity to use try and except statements, in case the database is down, etc.
-while True:
-    try:
-        conn = psycopg2.connect(
-            host="localhost",
-            database="fastapi",
-            user="postgres",
-            password="TAHF",
-            cursor_factory=RealDictCursor,
-        )
-        cursor = conn.cursor()
-        print("Database connection successful!")
-        break
+# while True:
+#     try:
+#         conn = psycopg2.connect(
+#             host="localhost",
+#             database="fastapi",
+#             user="postgres",
+#             password="TAHF",
+#             cursor_factory=RealDictCursor,
+#         )
+#         cursor = conn.cursor()
+#         print("Database connection successful!")
+#         break
 
-    except Exception as error:
-        print("Database connection failed.")
-        print("Error: ", error)
-        time.sleep(2)
+#     except Exception as error:
+#         print("Database connection failed.")
+#         print("Error: ", error)
+#         time.sleep(2)
