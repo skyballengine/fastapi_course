@@ -19,7 +19,6 @@ Base = declarative_base()
 def get_db():
     db = SessionLocal()
     try:
-        print("trying.....")
         yield db
     finally:
         db.close()
