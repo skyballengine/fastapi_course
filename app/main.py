@@ -31,4 +31,4 @@ app.include_router(vote.router)
 # path operation
 @app.get("/")
 def root():
-    return {"message": "Hey Tribal Brethren, welcome to my api!!!"}
+    return {"message": "Have your fun!!"}
